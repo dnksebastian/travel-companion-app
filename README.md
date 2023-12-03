@@ -24,7 +24,7 @@ This is a Travel Companion fullstack application - a portfolio project demonstra
 - **Frontend:**
   - HTML, CSS, JavaScript
   - Frameworks: React
-  - UI Framework: Radix UI
+  - UI Framework: ...
 - **Backend:**
   - Node.js
   - Express.js
@@ -35,6 +35,9 @@ This is a Travel Companion fullstack application - a portfolio project demonstra
   - Git for version control
   - GitHub for repository hosting
   - Render for hosting
+
+## Resources
+- [Earth Favicon](https://www.favicon.cc/?action=icon&file_id=976985)
 
 ## License
 

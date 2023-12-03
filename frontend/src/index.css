@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/* Global, reset & typography */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  display: block;
+  cursor: pointer;
+  font: inherit;
+  transition: 0.3s;
+  color: var(--text);
+  padding: .5rem;
+  font-size: 1rem;
+  border-radius: .7rem;
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary)!important;
+}
+
+:root {
+  --main-font: "Rubik", sans-serif;
+
+  /* ## Colors */
+  --text: rgb(17, 18, 18);
+  --background: rgb(222, 222, 222);
+  --primary: rgb(98, 146, 183);
+  --secondary: rgb(157, 196, 225);
+  --accent: rgb(90, 165, 226);
+}
+
+:root .dark {
+
+  /* Colors */
+  --text: rgb(237, 238, 238);
+  --background: rgb(15, 16, 17);
+  --primary: rgb(72, 120, 157);
+  --secondary: rgb(30, 68, 98);
+  --accent: rgb(29, 104, 165);
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: 10px;
+}
+
+body {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+  min-width: 30rem;
+}
+
+/* Utility classes */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border: 5px solid var(--accent);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }
+
+.error-msg {
+  padding: 1rem;
+  min-width: 10rem;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.311);
+  color: var(--cs-base);
+  border-radius: 1rem;
+}
