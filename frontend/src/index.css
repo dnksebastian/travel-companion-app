@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* ## Colors */
   --text: rgb(17, 18, 18);
+  --text-contrast: rgb(255, 255, 255);
   --background: rgb(222, 222, 222);
   --primary: rgb(98, 146, 183);
   --secondary: rgb(157, 196, 225);
